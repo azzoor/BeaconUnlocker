@@ -14,3 +14,15 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+#define brBEACON_UUID @"beacon_uuid"
+#define brBEACON_ID @"beacon_id"
+#define brBEACON_DISTANCE @"beacon_distance"
+
+typedef NS_ENUM(NSInteger, BRProximity) {
+	BRProximityUnknown,
+	BRProximityImmediate,
+	BRProximityNear,
+	BRProximityFar
+};

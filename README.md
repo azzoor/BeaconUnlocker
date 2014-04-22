@@ -13,13 +13,16 @@ Copy the BRBeaconUnlocker.h and BRBeaconUnlocker.m file into your project.
 - Import the "BRBeaconUnlocker.h" into your view controller.
 
 - Declare that you be a delegate of BRBeaconUnlocker in the @Interface. 
+
 	<BRBeaconUnlockerDelegate>
 
 - In your viewDidLoad set yourself as the delegate and start looking for beacons.
+
 	[BRBeaconUnlocker sharedInstance].delegate = self;
 	[[BRBeaconUnlocker sharedInstance]startLookingForBeaconsIn:@[@{brBEACON_UUID:[[NSUUID alloc] initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"], brBEACON_ID: @"dogBeacon", brBEACON_DISTANCE: [NSNumber numberWithInt:BRProximityImmediate]}]];
 
 Add the delegate method to begin receiving beacons found.
+
 	- (void)foundBeacon:(NSDictionary *)beacon distanceFromBeacon:(CLProximity)distance
 
 ## Example Project

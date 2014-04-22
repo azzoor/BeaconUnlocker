@@ -7,7 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface BRContentUnlocker : NSObject
+@protocol BRBeaconUnlockerDelegate;
+
+@interface BRBeaconUnlocker : NSObject
+
+- (void)startLookingForBeaconsIn:(NSArray *)array;
+- (void)stopLookingForBeacons;
+
+@property (nonatomic, weak) id<BRBeaconUnlockerDelegate> delegate;
+
+#pragma mark - Class Methods
++ (instancetype)sharedInstance;
+
+@end
+
+@protocol BRBeaconUnlockerDelegate <NSObject>
+
+- (void)foundBeacon:(NSDictionary *)beacon distanceFromBeacon:(CLProximity)distance;
 
 @end

@@ -7,8 +7,11 @@
 //
 
 #import "BRViewController.h"
+#import "BRBeaconUnlocker.h"
 
-@interface BRViewController ()
+@interface BRViewController () <BRBeaconUnlockerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *dogButton;
+@property (weak, nonatomic) IBOutlet UIButton *catButton;
 
 @end
 
@@ -17,13 +20,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [BRBeaconUnlocker sharedInstance].delegate = self;
+    [[BRBeaconUnlocker sharedInstance]startLookingForBeaconsIn:@[@{brBEACON_UUID:[[NSUUID alloc] initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"], brBEACON_ID: @"dogBeacon", brBEACON_DISTANCE: [NSNumber numberWithInt:BRProximityImmediate]}]];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)foundBeacon:(NSDictionary *)beacon distanceFromBeacon:(CLProximity)distance
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if ([[beacon objectForKey:brBEACON_ID]isEqualToString:@"dogBeacon"]) {
+        if (distance == BRProximityImmediate) {
+            self.dogButton.enabled = YES;
+        }else{
+            self.dogButton.enabled = NO;
+        }
+    }
 }
 
 @end

@@ -21,6 +21,15 @@
 		54C1E5521905E46C00FB6247 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C1E5341905E46C00FB6247 /* UIKit.framework */; };
 		54C1E55A1905E46C00FB6247 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54C1E5581905E46C00FB6247 /* InfoPlist.strings */; };
 		54C1E55C1905E46C00FB6247 /* BeaconUnlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C1E55B1905E46C00FB6247 /* BeaconUnlockTests.m */; };
+		54C1E5671905E4DB00FB6247 /* BRBeaconUnlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C1E5661905E4DB00FB6247 /* BRBeaconUnlocker.m */; };
+		54C1E5701905E8C800FB6247 /* dog_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C1E5681905E8C800FB6247 /* dog_disabled.png */; };
+		54C1E5711905E8C800FB6247 /* dog_disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C1E5691905E8C800FB6247 /* dog_disabled@2x.png */; };
+		54C1E5721905E8C800FB6247 /* dog_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C1E56A1905E8C800FB6247 /* dog_enabled.png */; };
+		54C1E5731905E8C800FB6247 /* dog_enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C1E56B1905E8C800FB6247 /* dog_enabled@2x.png */; };
+		54C1E5741905E8C800FB6247 /* cat_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C1E56C1905E8C800FB6247 /* cat_disabled.png */; };
+		54C1E5751905E8C800FB6247 /* cat_disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C1E56D1905E8C800FB6247 /* cat_disabled@2x.png */; };
+		54C1E5761905E8C800FB6247 /* cat_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C1E56E1905E8C800FB6247 /* cat_enabled.png */; };
+		54C1E5771905E8C800FB6247 /* cat_enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C1E56F1905E8C800FB6247 /* cat_enabled@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,16 @@
 		54C1E5571905E46C00FB6247 /* BeaconUnlockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconUnlockTests-Info.plist"; sourceTree = "<group>"; };
 		54C1E5591905E46C00FB6247 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		54C1E55B1905E46C00FB6247 /* BeaconUnlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconUnlockTests.m; sourceTree = "<group>"; };
+		54C1E5651905E4DB00FB6247 /* BRBeaconUnlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconUnlocker.h; sourceTree = "<group>"; };
+		54C1E5661905E4DB00FB6247 /* BRBeaconUnlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconUnlocker.m; sourceTree = "<group>"; };
+		54C1E5681905E8C800FB6247 /* dog_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog_disabled.png; sourceTree = "<group>"; };
+		54C1E5691905E8C800FB6247 /* dog_disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dog_disabled@2x.png"; sourceTree = "<group>"; };
+		54C1E56A1905E8C800FB6247 /* dog_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog_enabled.png; sourceTree = "<group>"; };
+		54C1E56B1905E8C800FB6247 /* dog_enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dog_enabled@2x.png"; sourceTree = "<group>"; };
+		54C1E56C1905E8C800FB6247 /* cat_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat_disabled.png; sourceTree = "<group>"; };
+		54C1E56D1905E8C800FB6247 /* cat_disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat_disabled@2x.png"; sourceTree = "<group>"; };
+		54C1E56E1905E8C800FB6247 /* cat_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat_enabled.png; sourceTree = "<group>"; };
+		54C1E56F1905E8C800FB6247 /* cat_enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat_enabled@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +136,9 @@
 				54C1E5421905E46C00FB6247 /* Main.storyboard */,
 				54C1E5451905E46C00FB6247 /* BRViewController.h */,
 				54C1E5461905E46C00FB6247 /* BRViewController.m */,
+				54C1E5651905E4DB00FB6247 /* BRBeaconUnlocker.h */,
+				54C1E5661905E4DB00FB6247 /* BRBeaconUnlocker.m */,
+				54C1E5781905E8CB00FB6247 /* Images */,
 				54C1E5481905E46C00FB6247 /* Images.xcassets */,
 				54C1E5371905E46C00FB6247 /* Supporting Files */,
 			);
@@ -150,6 +172,21 @@
 				54C1E5581905E46C00FB6247 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54C1E5781905E8CB00FB6247 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				54C1E5681905E8C800FB6247 /* dog_disabled.png */,
+				54C1E5691905E8C800FB6247 /* dog_disabled@2x.png */,
+				54C1E56A1905E8C800FB6247 /* dog_enabled.png */,
+				54C1E56B1905E8C800FB6247 /* dog_enabled@2x.png */,
+				54C1E56C1905E8C800FB6247 /* cat_disabled.png */,
+				54C1E56D1905E8C800FB6247 /* cat_disabled@2x.png */,
+				54C1E56E1905E8C800FB6247 /* cat_enabled.png */,
+				54C1E56F1905E8C800FB6247 /* cat_enabled@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +266,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C1E5751905E8C800FB6247 /* cat_disabled@2x.png in Resources */,
+				54C1E5721905E8C800FB6247 /* dog_enabled.png in Resources */,
+				54C1E5701905E8C800FB6247 /* dog_disabled.png in Resources */,
+				54C1E5741905E8C800FB6247 /* cat_disabled.png in Resources */,
 				54C1E5491905E46C00FB6247 /* Images.xcassets in Resources */,
+				54C1E5711905E8C800FB6247 /* dog_disabled@2x.png in Resources */,
+				54C1E5731905E8C800FB6247 /* dog_enabled@2x.png in Resources */,
 				54C1E53B1905E46C00FB6247 /* InfoPlist.strings in Resources */,
+				54C1E5771905E8C800FB6247 /* cat_enabled@2x.png in Resources */,
+				54C1E5761905E8C800FB6247 /* cat_enabled.png in Resources */,
 				54C1E5441905E46C00FB6247 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C1E5671905E4DB00FB6247 /* BRBeaconUnlocker.m in Sources */,
 				54C1E5471905E46C00FB6247 /* BRViewController.m in Sources */,
 				54C1E5411905E46C00FB6247 /* BRAppDelegate.m in Sources */,
 				54C1E53D1905E46C00FB6247 /* main.m in Sources */,
